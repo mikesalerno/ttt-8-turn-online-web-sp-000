@@ -16,7 +16,7 @@ end
 
 # check for valid move
 def valid_move?(board, index)
-  def position_taken"(array, ind)
+  def position_taken(array, ind)
     if array[ind] == " " || "" || nil
       return false
     else
