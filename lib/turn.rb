@@ -24,9 +24,9 @@ def valid_move?(board, index)
     end
   end
 # is position already taken and is valid
-  def on_board(num)
-    if num.between?(0, 8) == true return true
-      return true
+def on_board?(num)
+  if num.between?(0, 8) == true
+    return true
   else
     return false
   end
@@ -38,7 +38,6 @@ end
     return false
   end
 end
-
 def turn(board)
   puts "Please enter 1-9:"
 end
