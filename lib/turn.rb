@@ -40,7 +40,7 @@ def valid_move?(board, index)
 end
 
 # place users move on board
-def move(board, index, charecter = "X")
+def move(board, index, character = "X")
   board[index] = character
   return board
 end
