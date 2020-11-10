@@ -1,1 +1,12 @@
 #!/usr/bin/env ruby
+
+require_relative '../lib/turn'
+
+# define board
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+# welcome user
+puts "Welcome to Tic Tac Toe"
+
+# display board
+display_board(board)
