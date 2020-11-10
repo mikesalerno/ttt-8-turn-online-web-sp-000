@@ -23,7 +23,7 @@ def valid_move?(board, index)
       return true
     end
   end
-# is position already taken and is valid
+
   def on_board?(num)
     if num.between?(0, 8) == true
       return true
