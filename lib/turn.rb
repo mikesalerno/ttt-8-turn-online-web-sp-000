@@ -38,12 +38,21 @@ end
     return false
   end
 end
-def turn(board)
-  puts "Please enter 1-9:"
-end
 
 # place users move on board
 def move(board, index, charecter = "X")
   board[index] = character
   return board
+end
+
+# check for valid number, if not valid recurively ask for a number
+def turn(board)
+  puts "Please enter 1-9:"
+  num = gets.chomp
+  index = input_to_index(num)
+  if valid_move?(board, index)  == true
+    move(board, index)
+    display board
+  else
+    turn(board)
 end
