@@ -24,8 +24,9 @@ def valid_move?(board, index)
     end
   end
 # is position already taken and is valid
-  def board(num)
-    if num.between?(0, 8) == true return truere
+  def on_board(num)
+    if num.between?(0, 8) == true return true
+      return true
   else
     return false
   end
