@@ -46,11 +46,11 @@ def move(board, index, charecter = "X")
 end
 
 # check for valid number, if not valid recurively ask for a number
-def turn(board)
+def turn (board)
   puts "Please enter 1-9:"
   num = gets.chomp
   index = input_to_index(num)
-  if valid_move?(board, index)  == true
+  if valid_move?(board, index) == true
     move(board, index)
     display_board(board)
   else
